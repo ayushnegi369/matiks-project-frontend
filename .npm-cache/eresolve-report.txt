@@ -1,0 +1,349 @@
+# npm resolution error report
+
+2026-01-21T14:59:46.330Z
+
+While resolving: @react-navigation/bottom-tabs@7.10.1
+Found: react-native-screens@3.22.1
+node_modules/react-native-screens
+  react-native-screens@"~3.22.0" from the root project
+  peer react-native-screens@"*" from expo-router@2.0.15
+  node_modules/expo-router
+    expo-router@"^2.0.0" from the root project
+  peer react-native-screens@">= 3.0.0" from @react-navigation/bottom-tabs@6.5.20
+  node_modules/expo-router/node_modules/@react-navigation/bottom-tabs
+    @react-navigation/bottom-tabs@"~6.5.7" from expo-router@2.0.15
+    node_modules/expo-router
+      expo-router@"^2.0.0" from the root project
+  peer react-native-screens@">= 3.0.0" from @react-navigation/native-stack@6.9.26
+  node_modules/expo-router/node_modules/@react-navigation/native-stack
+    @react-navigation/native-stack@"~6.9.12" from expo-router@2.0.15
+    node_modules/expo-router
+      expo-router@"^2.0.0" from the root project
+
+Could not resolve dependency:
+peer react-native-screens@">= 4.0.0" from @react-navigation/bottom-tabs@7.10.1
+node_modules/@react-navigation/bottom-tabs
+  @react-navigation/bottom-tabs@"^7.4.0" from the root project
+
+Conflicting peer dependency: react-native-screens@4.20.0
+node_modules/react-native-screens
+  peer react-native-screens@">= 4.0.0" from @react-navigation/bottom-tabs@7.10.1
+  node_modules/@react-navigation/bottom-tabs
+    @react-navigation/bottom-tabs@"^7.4.0" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force, or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.
+
+Raw JSON explanation object:
+
+{
+  "code": "ERESOLVE",
+  "edge": {
+    "type": "peer",
+    "name": "react-native-screens",
+    "spec": ">= 4.0.0",
+    "error": "INVALID",
+    "from": {
+      "name": "@react-navigation/bottom-tabs",
+      "version": "7.10.1",
+      "location": "node_modules/@react-navigation/bottom-tabs",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "prod",
+          "name": "@react-navigation/bottom-tabs",
+          "spec": "^7.4.0",
+          "from": {
+            "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+          }
+        }
+      ]
+    }
+  },
+  "dep": {
+    "name": "react-native-screens",
+    "version": "4.20.0",
+    "whileInstalling": {
+      "name": "@react-navigation/bottom-tabs",
+      "version": "7.10.1",
+      "path": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend/node_modules/@react-navigation/bottom-tabs"
+    },
+    "location": "node_modules/react-native-screens",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "peer",
+        "name": "react-native-screens",
+        "spec": ">= 4.0.0",
+        "error": "INVALID",
+        "from": {
+          "name": "@react-navigation/bottom-tabs",
+          "version": "7.10.1",
+          "location": "node_modules/@react-navigation/bottom-tabs",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "@react-navigation/bottom-tabs",
+              "spec": "^7.4.0",
+              "from": {
+                "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "current": {
+    "name": "react-native-screens",
+    "version": "3.22.1",
+    "location": "node_modules/react-native-screens",
+    "isWorkspace": false,
+    "dependents": [
+      {
+        "type": "prod",
+        "name": "react-native-screens",
+        "spec": "~3.22.0",
+        "from": {
+          "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+        }
+      },
+      {
+        "type": "peer",
+        "name": "react-native-screens",
+        "spec": "*",
+        "from": {
+          "name": "expo-router",
+          "version": "2.0.15",
+          "location": "node_modules/expo-router",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "expo-router",
+              "spec": "^2.0.0",
+              "from": {
+                "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "peer",
+        "name": "react-native-screens",
+        "spec": ">= 3.0.0",
+        "from": {
+          "name": "@react-navigation/bottom-tabs",
+          "version": "6.5.20",
+          "location": "node_modules/expo-router/node_modules/@react-navigation/bottom-tabs",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "@react-navigation/bottom-tabs",
+              "spec": "~6.5.7",
+              "from": {
+                "name": "expo-router",
+                "version": "2.0.15",
+                "location": "node_modules/expo-router",
+                "isWorkspace": false,
+                "dependents": [
+                  {
+                    "type": "prod",
+                    "name": "expo-router",
+                    "spec": "^2.0.0",
+                    "from": {
+                      "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "type": "peer",
+        "name": "react-native-screens",
+        "spec": ">= 3.0.0",
+        "from": {
+          "name": "@react-navigation/native-stack",
+          "version": "6.9.26",
+          "location": "node_modules/expo-router/node_modules/@react-navigation/native-stack",
+          "isWorkspace": false,
+          "dependents": [
+            {
+              "type": "prod",
+              "name": "@react-navigation/native-stack",
+              "spec": "~6.9.12",
+              "from": {
+                "name": "expo-router",
+                "version": "2.0.15",
+                "location": "node_modules/expo-router",
+                "isWorkspace": false,
+                "dependents": [
+                  {
+                    "type": "prod",
+                    "name": "expo-router",
+                    "spec": "^2.0.0",
+                    "from": {
+                      "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "peerConflict": {
+    "current": {
+      "name": "react-native-screens",
+      "version": "3.22.1",
+      "location": "node_modules/react-native-screens",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "prod",
+          "name": "react-native-screens",
+          "spec": "~3.22.0",
+          "from": {
+            "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+          }
+        },
+        {
+          "type": "peer",
+          "name": "react-native-screens",
+          "spec": "*",
+          "from": {
+            "name": "expo-router",
+            "version": "2.0.15",
+            "location": "node_modules/expo-router",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "expo-router",
+                "spec": "^2.0.0",
+                "from": {
+                  "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "peer",
+          "name": "react-native-screens",
+          "spec": ">= 3.0.0",
+          "from": {
+            "name": "@react-navigation/bottom-tabs",
+            "version": "6.5.20",
+            "location": "node_modules/expo-router/node_modules/@react-navigation/bottom-tabs",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "@react-navigation/bottom-tabs",
+                "spec": "~6.5.7",
+                "from": {
+                  "name": "expo-router",
+                  "version": "2.0.15",
+                  "location": "node_modules/expo-router",
+                  "isWorkspace": false,
+                  "dependents": [
+                    {
+                      "type": "prod",
+                      "name": "expo-router",
+                      "spec": "^2.0.0",
+                      "from": {
+                        "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "type": "peer",
+          "name": "react-native-screens",
+          "spec": ">= 3.0.0",
+          "from": {
+            "name": "@react-navigation/native-stack",
+            "version": "6.9.26",
+            "location": "node_modules/expo-router/node_modules/@react-navigation/native-stack",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "@react-navigation/native-stack",
+                "spec": "~6.9.12",
+                "from": {
+                  "name": "expo-router",
+                  "version": "2.0.15",
+                  "location": "node_modules/expo-router",
+                  "isWorkspace": false,
+                  "dependents": [
+                    {
+                      "type": "prod",
+                      "name": "expo-router",
+                      "spec": "^2.0.0",
+                      "from": {
+                        "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "peer": {
+      "name": "react-native-screens",
+      "version": "4.20.0",
+      "whileInstalling": {
+        "name": "@react-navigation/bottom-tabs",
+        "version": "7.10.1",
+        "path": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend/node_modules/@react-navigation/bottom-tabs"
+      },
+      "location": "node_modules/react-native-screens",
+      "isWorkspace": false,
+      "dependents": [
+        {
+          "type": "peer",
+          "name": "react-native-screens",
+          "spec": ">= 4.0.0",
+          "error": "INVALID",
+          "from": {
+            "name": "@react-navigation/bottom-tabs",
+            "version": "7.10.1",
+            "location": "node_modules/@react-navigation/bottom-tabs",
+            "isWorkspace": false,
+            "dependents": [
+              {
+                "type": "prod",
+                "name": "@react-navigation/bottom-tabs",
+                "spec": "^7.4.0",
+                "from": {
+                  "location": "/Users/ayushnegi/Desktop/Matiks Assignment/frontend"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "strictPeerDeps": false,
+  "force": false,
+  "isMine": true
+}
