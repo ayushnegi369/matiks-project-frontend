@@ -2,7 +2,7 @@ import { Platform } from 'react-native';
 
 // Use environment variable for BASE_URL
 // Expo automatically injects variables prefixed with EXPO_PUBLIC_
-const BASE_URL = process.env.EXPO_PUBLIC_API_URL || (Platform.OS === 'android' ? 'http://10.0.2.2:8080' : 'http://127.0.0.1:8080');
+const BASE_URL = process.env.EXPO_PUBLIC_API_URL || "https://matiks-project-backend.onrender.com";
 
 export interface User {
     username: string;
